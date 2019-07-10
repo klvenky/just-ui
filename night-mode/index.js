@@ -15,7 +15,7 @@ function randomColor() {
 function toggleMode() {
   const body = getBody();
   if (toggle) clearInterval(toggle);
-  toggle = setInterval(function () {
+  toggle = setInterval(function() {
     const color = randomColor();
     if (!body.style) body.style = {};
     body.style['background-color'] = color;
@@ -32,7 +32,7 @@ function reset() {
 }
 function setBodyStyle(style) {
   const body = getBody();
-  Object.keys(style).forEach(a => {
+  Object.keys(style).forEach((a) => {
     body.style[a] = style[a];
   });
 }
@@ -42,5 +42,4 @@ function nightMode() {
     'background-color': style['background-color'] === 'black' ? 'white' : 'black',
     color: style.color === 'white' ? 'black' : 'white',
   });
-
 }
