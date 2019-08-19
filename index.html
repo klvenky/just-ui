@@ -3,7 +3,6 @@
     <link type="stylesheet" href="./style.css" />
     <style>
       body {
-        background: #aa3b00;
       }
       ul {
         list-style: none;
@@ -12,18 +11,27 @@
         font-weight: 200;
       }
     </style>
+    <script>
+      function focusFn() {
+        document.getElementById('search').focus();
+      };
+    </script>
   </head>
 
   <body>
     <p>Hello world</p>
     <div class="purple">
-      Whats'up guys
+      Whats'up guys!
       <ul>
         <li value="sample1">sample1</li>
         <li value="sample2">sample2</li>
         <li value="sample3">sample3</li>
         <li value="sample4">sample4</li>
       </ul>
+      <input id="search" type="text" />
+      <button type="button" onclick="focusFn()">
+        Click me Bro!
+      </button>
     </div>
   </body>
 </html>
