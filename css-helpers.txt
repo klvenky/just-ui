@@ -1,0 +1,19 @@
+append style to head
+----------------------------------------------
+style = document.createElement('style');
+style.innerHTML = `
+.content {
+  height: 100vh;
+}
+`;
+document.head.appendChild(style)
+
+Quora remove login check
+----------------------------------------
+jQuery('.vertical_alignment_wrapper').attr('style', 'display: none!important');
+jQuery('.signup_wall_prevent_scroll').attr('style', 'overflow: scroll! important');
+jQuery('.signup_wall_prevent_scroll .SiteHeader, .signup_wall_prevent_scroll .LoggedOutFooter, .signup_wall_prevent_scroll.ContentWrapper').attr('style', 'filter: blur(0px)'); 
+
+pgadmin remove floating window
+================================
+document.getElementsByClassName('wcFrame wcWide wcTall wcFloating')[0].setAttribute('style', 'display: none')
