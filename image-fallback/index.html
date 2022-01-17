@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Fallback Checker</title>
+  </head>
+  <body>
+    <div style="background-color: yellow; color: red">
+      <p>Hey! I am an image. I am available in different file formats.</p>
+      <p>
+        Thanks to the creator
+        <a href="https://unsplash.com/@molnj">Jocelyn Morales</a> for making
+        <a href="https://unsplash.com/photos/Xzgo7v0oKVk">this awesome image</a>
+        free for use on
+        <a href="https://unsplash.com/photos/Xzgo7v0oKVk">Unsplash</a>
+      </p>
+    </div>
+    Browser Support for different Formats
+    <ol>
+      <li><a href="https://caniuse.com/?search=webp">WebP</a></li>
+      <li><a href="https://caniuse.com/?search=avif">AVIF</a></li>
+      <li><a href="https://caniuse.com/?search=png">PNG</a></li>
+    </ol>
+
+    <picture>
+      <source
+        width="800"
+        srcset="jocelyn-morales-Xzgo7v0oKVk-unsplash.avif"
+        type="image/avif"
+        alt="avif"
+      />
+      <source
+        width="800"
+        srcset="jocelyn-morales-Xzgo7v0oKVk-unsplash.webp"
+        type="image/webp"
+        alt="webp"
+      />
+      <img
+        src="jocelyn-morales-Xzgo7v0oKVk-unsplash.jpg"
+        width="800"
+        alt="jpeg"
+      />
+    </picture>
+  </body>
+</html>
