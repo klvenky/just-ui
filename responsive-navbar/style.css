@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(27, 250, 202);
+  min-height: 8vh;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+}
+
+.nav-item {
+  text-decoration: none;
+}
